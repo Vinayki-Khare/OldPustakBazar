@@ -1,0 +1,85 @@
+﻿.sect{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.contain{
+    width: 80%;
+    display:block;
+    margin:auto;
+    padding-top:100px;
+}
+.content-sect{
+    float:left;
+    width:55%;
+}
+.image-section{
+    float:right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-sect .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-sect .conte h3{
+    margin-top: 20px;
+    color:#5d5d5d;
+    font-size: 22px;
+}
+.content-sect .social i:hover{
+    color: #3d3d3d;
+}
+.content-sect .conte p{
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-sect .conte .button{
+    margin-top: 30px;
+}
+.content-sect .conte .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-sect .conte .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-sect .social{
+    margin-top: 40px 40px;
+}
+.content-sect .social i{
+    color: #a52a3a;
+    font-size: 30px;
+    padding: 0px 10px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 768px){
+    .contain{
+    width: 80%;
+    display:block;
+    margin:auto;
+    padding-top:50px;
+}
+    .content-sect{
+    float:none;
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+    .image-section{
+    float:none;
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+}

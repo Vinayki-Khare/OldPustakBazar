@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="ADMIN_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/header.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="header">
+                <div class="header-2">
+                    <nav class="navbar">
+                        <a href="Add_Books.aspx">Add Product</a>
+                        <a href="ViewBooks.aspx">View Books</a>
+                        <a href="ViewUsers.aspx">View Users</a>
+                        <a href="ViewOrders.aspx">View Orders</a>
+                        <asp:LinkButton runat="server" Text="Log-out" class="nav-link" OnClick="Unnamed_Click">Log-Out</asp:LinkButton>
+                    </nav>
+                </div>
+                <div >
+                    <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                </div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="Content/bakery.jpg" width="80px" height="40px" alt="#" float="right" />
+                    <a class="navbar-brand" href="#">Bakery</a>-->
+            <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>-->
+
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" float="right">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="BakerySignUp.aspx">Signup <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="BakeryLogin.aspx">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="BakeryAdminLogin.aspx">Admin Login</a>
+                </nav>-->
+        </div>
+    </form>
+</body>
+</html>

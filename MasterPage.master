@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/header.css" />
+    <link href="Content/AboutUs.css" rel="stylesheet" />
+    <link href="Content/Carousel.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <form id="form2" runat="server" class="search-form">
+        <header class="header">
+
+            <div class="header-1">
+                <h3>OLD PUSTAK BAZAR</h3>
+                <%-- <a href="#" class="logo"> <i class="fas fa-book"></i> BOOK RESALE </a>--%>
+
+
+                <%--<input type="search" name="" placeholder="search here..." id="search-box">--%>
+               <%-- <%  <asp:TextBox ID="serach" runat="server" CssClass="form-control" Style="height: 39.2px; width: 550px;" placeholder="search here..."></asp:TextBox>
+                <label for="search-box" class="fas fa-search"></label> %>--%>
+
+
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <%--<a href="" class="fas fa-heart"></a>--%>
+                    <%--<div id="login-btn" class="fas fa-user"></div>--%>
+                    <%--asp:Button ID="Button1" runat="server" Text="Search" class="btn btn-primary" />--%>
+                    <a href="ADMIN/Admin_login.aspx">
+                        <img src="Content/admin.jpg" style="margin-top: 1px; width: 25px; height: 30px;" /></a>
+
+                </div>
+            </div>
+
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="IndexPage.aspx">Home</a>
+                    <asp:LinkButton ID="log1" runat="server" OnClick="log1_Click">Login</asp:LinkButton>
+                    <asp:LinkButton ID="reg2" runat="server" OnClick="reg2_Click">Register</asp:LinkButton>
+                    <%--<a href="Login.aspx">Login</a>
+                    <a href="Register.aspx">Register</a>--%>
+                    <a href="ContactUs.aspx">Contact Us</a>
+                    <a href="AboutUs.aspx">About Us</a>
+                    <asp:LinkButton ID="dash4" runat="server" OnClick="dash4_Click">Dashboard</asp:LinkButton>
+                    <asp:LinkButton ID="log3" runat="server" OnClick="log3_Click">Log-Out</asp:LinkButton>
+                </nav>
+            </div>
+
+        </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+             
+
+            <section class="footer" style="background-color: #eee;">
+
+                <div class="box-container">
+
+
+                    <%-- <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> africa </a>
+        </div>--%>
+
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="IndexPage.aspx"><i class="fas fa-arrow-right"></i>Home </a>
+                        <a href="login.aspx"><i class="fas fa-arrow-right"></i>Login </a>
+                        <a href="Register.aspx"><i class="fas fa-arrow-right"></i>Register </a>
+                        <a href="ContactUs.aspx"><i class="fas fa-arrow-right"></i>Contact Us </a>
+                        <a href="AboutUs.aspx"><i class="fas fa-arrow-right"></i>About Us </a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Social links</h3>
+                        <a href="#"><i class="fas fa-arrow-right"></i>account info </a>
+                        <a href="#"><i class="fas fa-arrow-right"></i>ordered items </a>
+                        <a href="#"><i class="fas fa-arrow-right"></i>privacy policy </a>
+                        <a href="#"><i class="fas fa-arrow-right"></i>payment method </a>
+                        <a href="#"><i class="fas fa-arrow-right"></i>our serivces </a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Contact info</h3>
+                        <a href="#"><i class="fas fa-phone"></i>+91 7828300319 </a>
+                        <a href="#"><i class="fas fa-phone"></i>+91 9826856126 </a>
+                        <a href="#"><i class="fas fa-envelope"></i>Bookresale45@gmail.com </a>
+                    </div>
+
+                </div>
+
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </section>
+
+        </div>
+    </form>
+
+</body>
+</html>
